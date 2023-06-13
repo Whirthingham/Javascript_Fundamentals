@@ -56,3 +56,8 @@ numArr.forEach((row)=>{
    })
 });
 console.log("Total in numArr = "+ total);
+
+// Sorting in ascending order by total value
+console.log(MathScore.sort((a,b)=>{
+    return a[a.length-1]-b[b.length-1];
+}))
