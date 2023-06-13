@@ -69,3 +69,7 @@ MathScore.push(['Hammond', 78, 'B', 88]);
 MathScore.unshift(['Mata', 72, 'B', 82]);
 console.log(MathScore);
 
+//How to insert element at the middle of Two Dimensional Array  
+numArr.splice(2,0,[7,87,20])
+console.log(numArr);
+
