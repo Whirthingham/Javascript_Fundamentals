@@ -41,3 +41,18 @@ MathScore.forEach((score)=>{
 })
 console.log("totalScore = "+ totalScore);
 
+//How to add all elements of a 2D array
+let numArr = [
+    [10, 40, 30],
+    [50, 70, 100],
+    [120, 10, 80],
+    [34, 50, 90]
+]
+
+let total = 0;
+numArr.forEach((row)=>{
+   row.forEach((element)=>{
+    total += element;
+   })
+});
+console.log("Total in numArr = "+ total);
