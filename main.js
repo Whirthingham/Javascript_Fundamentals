@@ -25,3 +25,11 @@ console.log("Last Value = "+ lastValue);
 // Accessing the first value of the last element
 let firstValueOfLastElement = MathScore[MathScore.length-1][0];
 console.log('firstValueOfLastElement = '+ firstValueOfLastElement);
+
+// How to add element to all Arrays at once
+let reviewScore = 10;
+MathScore.forEach((score)=>{
+    let totalScore = score[1] + reviewScore;
+    score.push(totalScore);
+});
+console.log(MathScore);
