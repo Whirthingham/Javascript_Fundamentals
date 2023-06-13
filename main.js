@@ -33,3 +33,11 @@ MathScore.forEach((score)=>{
     score.push(totalScore);
 });
 console.log(MathScore);
+
+// How to add elements of a 2D array
+let totalScore = 0
+MathScore.forEach((score)=>{
+   totalScore += score[score.length-1];
+})
+console.log("totalScore = "+ totalScore);
+
