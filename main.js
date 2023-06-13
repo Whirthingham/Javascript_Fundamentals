@@ -64,4 +64,8 @@ console.log(MathScore.sort((a,b)=>{
 
 // How to insert an element into a 2D array
 MathScore.push(['Hammond', 78, 'B', 88]);
+
+// How to insert an element to the begining of a 2D array
+MathScore.unshift(['Mata', 72, 'B', 82]);
 console.log(MathScore);
+
