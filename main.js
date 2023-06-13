@@ -61,3 +61,7 @@ console.log("Total in numArr = "+ total);
 console.log(MathScore.sort((a,b)=>{
     return a[a.length-1]-b[b.length-1];
 }))
+
+// How to insert an element into a 2D array
+MathScore.push(['Hammond', 78, 'B', 88]);
+console.log(MathScore);
