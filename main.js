@@ -32,3 +32,10 @@ console.log(fruit);
 fruit.pop();    // Pop removes the last element of an array
 fruit.shift();  // Shift removes the first element of an array
 console.log(fruit);
+
+// How to copy and clone an array;
+const saladCopy = salad.slice();
+const fruitHalf = fruit.slice(0,(fruit.length/2)-1);
+console.log(`The copy of sald : ${saladCopy}`);
+console.log(`Half copy of fruit : ${fruitHalf}`);
+console.log(salad == saladCopy);
