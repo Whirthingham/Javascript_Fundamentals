@@ -18,3 +18,7 @@ for(let i=0; i<=salad.length-1; i++){
 salad.forEach((ingredients)=>{
     console.log(ingredients);
 })
+
+// How to create an array using an array constructor
+const fruit = new Array('Mango', 'Banana', 'Pea', 'Manzanas', 'Sugar-Cane', 'Orange');
+console.log(fruit);
