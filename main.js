@@ -44,3 +44,9 @@ console.log(salad == saladCopy);
 console.log("saladCopy is an array : " + Array.isArray(saladCopy));
 console.log(Array.isArray(390));
 console.log(Array.isArray(salad));
+
+// How to destructure an array
+const [onion, ginger, pepper] = ['Onion', 'Ginger', 'Pepper'];
+console.log(onion);
+console.log(ginger);
+console.log(pepper);
