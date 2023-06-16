@@ -36,6 +36,11 @@ console.log(fruit);
 // How to copy and clone an array;
 const saladCopy = salad.slice();
 const fruitHalf = fruit.slice(0,(fruit.length/2)-1);
-console.log(`The copy of sald : ${saladCopy}`);
+console.log(`The copy of salad : ${saladCopy}`);
 console.log(`Half copy of fruit : ${fruitHalf}`);
 console.log(salad == saladCopy);
+
+// How to determing if a value is an array
+console.log("saladCopy is an array : " + Array.isArray(saladCopy));
+console.log(Array.isArray(390));
+console.log(Array.isArray(salad));
