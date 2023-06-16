@@ -22,3 +22,8 @@ salad.forEach((ingredients)=>{
 // How to create an array using an array constructor
 const fruit = new Array('Mango', 'Banana', 'Pea', 'Manzanas', 'Sugar-Cane', 'Orange');
 console.log(fruit);
+
+// How to add element to an array
+fruit.push('Watermelon');   // Push adds to the end of the array
+fruit.unshift('Pineapple') // Unshift adds to the begining of the array;
+console.log(fruit);
