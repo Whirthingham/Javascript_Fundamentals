@@ -27,3 +27,8 @@ console.log(fruit);
 fruit.push('Watermelon');   // Push adds to the end of the array
 fruit.unshift('Pineapple') // Unshift adds to the begining of the array;
 console.log(fruit);
+
+// How to remove element of an array
+fruit.pop();    // Pop removes the last element of an array
+fruit.shift();  // Shift removes the first element of an array
+console.log(fruit);
