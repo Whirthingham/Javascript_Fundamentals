@@ -67,3 +67,8 @@ console.log(`Mi gustar ${bread} y ${milk}`);
 const alimento = ['Banana', 'Manzanas', ['Cake', 'Pan','Dougnut','Pie'],['Leche','Honey'],['Tampico','Choco','Vita']];
 const [favoritaFruta,,[,pan],...rest] = alimento;
 console.log(`Mi favorita fruta es ${favoritaFruta} y mi favorita bocadilo es ${pan} y la ${rest}`);
+
+// How to Use the Spread Operator in JS
+// Cloning arrays with spread operator
+const alimentoClone = [...alimento];
+console.log(alimentoClone);
