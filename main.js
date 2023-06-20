@@ -72,3 +72,10 @@ console.log(`Mi favorita fruta es ${favoritaFruta} y mi favorita bocadilo es ${p
 // Cloning arrays with spread operator
 const alimentoClone = [...alimento];
 console.log(alimentoClone);
+
+// Swaping values with destructuring
+let primeroNombre = "Whirthingham";
+let ultimoNombre = "Wilson";
+[primeroNombre,ultimoNombre]= [ultimoNombre,primeroNombre];
+console.log('Firstname : '+ primeroNombre);
+console.log('Lastname : ' + ultimoNombre);
