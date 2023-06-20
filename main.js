@@ -50,3 +50,11 @@ const [onion, ginger, pepper] = ['Onion', 'Ginger', 'Pepper'];
 console.log(onion);
 console.log(ginger);
 console.log(pepper);
+
+// How to assign a defualt value when destructuring arrays
+const[snack='meatpie', drink='tampico'] = ['meatpie'];
+console.log(`I want some ${drink} with ${snack}`);
+
+// How to Skip a Value in an Array
+const [programingLanguage, nativeLanguage='Twi', fluentLanguage] = ['JavaScript',,'Espanol']
+console.log(`Yo programa en ${programingLanguage}, and hablas ${fluentLanguage}. But my native es ${nativeLanguage}`);
