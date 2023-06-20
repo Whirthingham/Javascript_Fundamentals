@@ -56,5 +56,9 @@ const[snack='meatpie', drink='tampico'] = ['meatpie'];
 console.log(`I want some ${drink} with ${snack}`);
 
 // How to Skip a Value in an Array
-const [programingLanguage, nativeLanguage='Twi', fluentLanguage] = ['JavaScript',,'Espanol']
+const [programingLanguage, nativeLanguage, fluentLanguage] = ['JavaScript',,'Espanol']
 console.log(`Yo programa en ${programingLanguage}, and hablas ${fluentLanguage}. But my native es ${nativeLanguage}`);
+
+// Nested Array Destructuring in JS
+const [,,[,bread],[milk]] = ['Banana', 'Manzanas', ['Cake', 'Pan','Dougnut','Pie'],['Leche','Honey'],['Tampico','Choco','Vita']];
+console.log(`Mi gustar ${bread} y ${milk}`);
