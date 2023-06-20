@@ -79,3 +79,14 @@ let ultimoNombre = "Wilson";
 [primeroNombre,ultimoNombre]= [ultimoNombre,primeroNombre];
 console.log('Firstname : '+ primeroNombre);
 console.log('Lastname : ' + ultimoNombre);
+
+// How to merge arrays
+// Using Destructuring
+const emotion = ['🙂', '😔'];
+const veggies = ['🥦', '🥒', '🌽', '🥕'];
+const mergeArrays = [...emotion, ...veggies];
+console.log(mergeArrays);
+
+// Using the Concat Array method
+const merge = emotion.concat(veggies);
+console.log("Merge : " + merge)
