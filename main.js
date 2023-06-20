@@ -62,3 +62,8 @@ console.log(`Yo programa en ${programingLanguage}, and hablas ${fluentLanguage}.
 // Nested Array Destructuring in JS
 const [,,[,bread],[milk]] = ['Banana', 'Manzanas', ['Cake', 'Pan','Dougnut','Pie'],['Leche','Honey'],['Tampico','Choco','Vita']];
 console.log(`Mi gustar ${bread} y ${milk}`);
+
+// How to use the rest parametre in JavaScript
+const alimento = ['Banana', 'Manzanas', ['Cake', 'Pan','Dougnut','Pie'],['Leche','Honey'],['Tampico','Choco','Vita']];
+const [favoritaFruta,,[,pan],...rest] = alimento;
+console.log(`Mi favorita fruta es ${favoritaFruta} y mi favorita bocadilo es ${pan} y la ${rest}`);
