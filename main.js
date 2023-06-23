@@ -51,3 +51,10 @@ const findUser = users.find((user)=>{
     return user.firstname == "Bismarck";
 })
 console.log(findUser);
+
+// Array. findIndex method
+const findIndex = users.findIndex((user)=>{
+    return user.firstname == "Kojo";
+}) 
+
+console.log(findIndex);
