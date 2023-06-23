@@ -71,6 +71,7 @@ const filterCity = users.filter((user)=>{
 
 console.log(filterCity);
 
+//  Array.every method
 const numbers = [2,4,6,8,10,12]
 const even = numbers.every((value)=>{
     return value % 2 == 0;
@@ -82,3 +83,9 @@ const positive = numbers.every((value)=>{
     return value > 0;
 });
 console.log("Numbers are positive : "+ positive);
+
+// Array.some method
+const greaterThan10 = numbers.some((value)=>{
+    return value > 10;
+});
+console.log("Some values are greater than 10:"+ greaterThan10);
