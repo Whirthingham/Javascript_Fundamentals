@@ -11,7 +11,7 @@ const transformedMonth = month.map((value)=>{
     return value.toUpperCase();
 })
 
-console.log(transformedMonth);
+// console.log(transformedMonth)
 const users = [
     {
         firstname : "Bismarck",
@@ -33,15 +33,21 @@ const users = [
 const usersList = users.map((user)=>{
     return user.firstname + " " + user.lastname;
 })
-console.log(usersList);
+// console.log(usersList);
 
 const userCities = users.map((user)=>{
     return user.city;
 })
-console.log(userCities);
+// console.log(userCities);
 
 // How to generate arrays with dynamic contents
 const dynamicContent = users.map((user)=>{
     return `${user.firstname + " " + user.lastname} lives in ${user.city}`;
 })
-console.log(dynamicContent.join("**||**"));
+// console.log(dynamicContent.join("**||**"));
+
+// Array.find method
+const findUser = users.find((user)=>{
+    return user.firstname == "Bismarck";
+})
+console.log(findUser);
