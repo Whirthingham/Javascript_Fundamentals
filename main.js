@@ -89,3 +89,40 @@ const greaterThan10 = numbers.some((value)=>{
     return value > 10;
 });
 console.log("Some values are greater than 10:"+ greaterThan10);
+
+// Array.reduce method
+const sum = numbers.reduce((accumulator, current_value)=>{
+    return accumulator + current_value;
+})
+console.log('The total is : ' + sum);
+
+const productOfAll = numbers.reduce((accumulator, currnet_index)=>{
+    return accumulator * currnet_index;
+})
+console.log("The Product of All :" + productOfAll);
+
+// Finding total coordinate
+const line = [
+    {
+        x_coordinate : 2,
+        y_coordinate : 5
+    },
+    {
+        x_coordinate : 8,
+        y_coordinate : 15
+    },
+    {
+        x_coordinate : 4,
+        y_coordinate : 12
+    }
+]
+
+const totalXCoordinate = line.reduce((prev,curr)=>{
+    return prev + curr.x_coordinate;
+}, 0)
+console.log("The TotalXCoordinate es :" + totalXCoordinate);
+
+const totalYCoordinate = line.reduce((prev, curr)=>{
+    return prev + curr.y_coordinate;
+},0);
+console.log("The TotalYCoordinate es :" + totalYCoordinate);
