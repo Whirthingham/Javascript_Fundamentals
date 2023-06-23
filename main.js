@@ -58,3 +58,15 @@ const findIndex = users.findIndex((user)=>{
 }) 
 
 console.log(findIndex);
+
+// Array.fileter method
+const filterLastName = users.filter((user)=>{
+    return user.lastname == "Nyame";
+})
+console.log(filterLastName);
+
+const filterCity = users.filter((user)=>{
+    return user.city == "Komenda";
+})
+
+console.log(filterCity);
