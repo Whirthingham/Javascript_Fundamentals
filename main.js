@@ -70,3 +70,15 @@ const filterCity = users.filter((user)=>{
 })
 
 console.log(filterCity);
+
+const numbers = [2,4,6,8,10,12]
+const even = numbers.every((value)=>{
+    return value % 2 == 0;
+});
+
+console.log("Numbers are even : "+ even);
+
+const positive = numbers.every((value)=>{
+    return value > 0;
+});
+console.log("Numbers are positive : "+ positive);
