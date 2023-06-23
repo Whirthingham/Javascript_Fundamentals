@@ -1,0 +1,41 @@
+// Array.forEach Method
+const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+month.forEach((value)=>{
+   value += " New Month";
+//    console.log(value);
+})
+
+// Array.map Method
+const transformedMonth = month.map((value)=>{
+    return value.toUpperCase();
+})
+
+console.log(transformedMonth);
+const users = [
+    {
+        firstname : "Bismarck",
+        lastname : "Nyame",
+        city    :  "Wassa Akropong"
+    },
+    {
+        firstname : "Benjamin",
+        lastname  : "Nyame",
+        city      : "Komenda"
+    },
+    {
+        firstname : "Kojo",
+        lastname  : "Odoom",
+        city      : "Accra" 
+    }
+];
+
+const usersList = users.map((user)=>{
+    return user.firstname + " " + user.lastname;
+})
+console.log(usersList);
+
+const userCities = users.map((user)=>{
+    return user.city;
+})
+console.log(userCities);
