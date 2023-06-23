@@ -39,3 +39,9 @@ const userCities = users.map((user)=>{
     return user.city;
 })
 console.log(userCities);
+
+// How to generate arrays with dynamic contents
+const dynamicContent = users.map((user)=>{
+    return `${user.firstname + " " + user.lastname} lives in ${user.city}`;
+})
+console.log(dynamicContent.join("**||**"));
